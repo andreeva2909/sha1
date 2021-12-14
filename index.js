@@ -45,7 +45,7 @@ app
     const WPresponse = await axios.post(
       `https://wordpress.kodaktor.ru/wp-json/wp/v2/posts/`,
 
-      { content, title: "itmo307691", status: "publish" },
+      { content, title: "andreeva.anna2909", status: "publish" },
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -64,7 +64,7 @@ app
   //     value: crypto.createHash("sha1").update(r.body.inp).digest("hex"),
   //   });
   // })
-  .all("/login", (r) => r.res.send("itmo307691"))
+  .all("/login", (r) => r.res.send("andreeva.anna2909"))
   .listen(process.env.PORT || 3000, () => {
     console.log("Server is working");
   });
